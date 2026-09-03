@@ -59,12 +59,12 @@
   --cape-town-27-orange: #fab44b;
   --galoyblue: #3654ff;
   --kenya-orange: #f7931a;
-  --bitcoinorange: #f68e1d;
   --fontgrey: #a8a8a8;
   --black: black;
   --galoygrey: #1e1e1e;
   --white-2: white;
   --ab-yellow: #eedb5f;
+  --bitcoinorange: #f68e1d;
 }
 
 body {
@@ -480,7 +480,7 @@ a:hover {
 }
 
 .footer-copyright {
-  color: var(--bitcoinorange);
+  color: var(--cape-town-27-orange);
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
@@ -721,7 +721,7 @@ a:hover {
 }
 
 .hero-section {
-  color: #fff;
+  color: var(--cape-town-27-orange);
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
   margin-top: 0;
@@ -1537,9 +1537,8 @@ a:hover {
 }
 
 .code-link {
-  border-right: 1px solid #fff;
-  border-left: 1px solid var(--white);
-  color: var(--white);
+  border-right: 1px solid var(--cape-town-27-orange);
+  border-left: 1px solid var(--cape-town-27-orange);
   padding: 8px 10px;
   display: inline-block;
 }
@@ -1556,6 +1555,7 @@ a:hover {
 }
 
 .code-content {
+  color: #fff0da;
   max-width: 680px;
   font-size: 15px;
 }
@@ -1633,7 +1633,7 @@ a:hover {
 }
 
 .ab-country-tab.country-tab-nl {
-  background-color: #ffb000;
+  background-color: #bcc9ec;
 }
 
 .ab-country-tab.country-tab-nl:hover {
@@ -1653,6 +1653,14 @@ a:hover {
 
 .es-100 {
   height: 100px;
+}
+
+.orange-text {
+  color: var(--cape-town-27-orange);
+}
+
+.es-40 {
+  height: 40px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -2589,6 +2597,10 @@ a:hover {
     align-items: flex-start;
   }
 
+  .footer-copyright {
+    color: var(--cape-town-27-orange);
+  }
+
   .centered-heading {
     margin-bottom: 24px;
   }
@@ -2742,6 +2754,10 @@ a:hover {
   .ab-countries {
     grid-template-columns: 1fr;
     place-items: center;
+  }
+
+  .ab-country-tab.country-tab-nl {
+    background-color: #bcc9ec;
   }
 
   .archive-container {
